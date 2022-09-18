@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #submit{
+        float: right;
+        margin-right: 65px;
+        
+    }
+        body{
+            background-image: url(bazaar.jpg);    
+        }
+        .details{
+            background-color: crimson;
+            border: rgb(223, 39, 213);
+            border-radius: 20px;
+            border-width: 12px;
+            padding: 10px;
+            padding-left: 20px;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+      #order{
+          text-decoration: none;
+          background-color: rgb(124, 171, 241);
+          border-radius: 5px;
+      }
+      table{
+          padding-left: 500px;
+          
+      }
+        table th{
+            font-size: 25px;
+            margin-left: 500px;
+           padding-left: 10px;
+            text-align: left;
+            background-color: blue;
+            border: brown;
+            
+            border-width: 10px;
+        }
+        .navbar img{
+       filter: invert(100);
+   }
+        table td{
+            font-size: 22px;
+            border: brown;
+            border-width: 10px;
+            padding-left: 10pxpx;
+            background-color: aquamarine;
+            padding: 20px;
+        }
+        .navbar {
+            /* position: absolute; */
+            margin-left: 2px;
+            border-radius: 40px;
+            padding: 3px 5px;
+            padding-bottom: 0.5px;
+            background-color: darkgray;
+            /* margin-bottom: 60px; */
+        }
+
+        .navbar li {
+            /* padding-top: 20px; */
+            /* position: fixe; */
+            float: left;
+        
+            list-style: none;
+
+        }
+
+        .navbar ul {
+            overflow: auto;
+            
+        }
+
+        .navbar li a {
+            
+            font-size: 20px;
+            padding-left: 10px;
+            padding: 10px;
+            text-decoration: none;
+            color: rgb(9, 236, 187);
+            padding-bottom: 2px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: crimson;
+        }
+        .search {
+            float: right;
+            color: cornsilk;
+            padding: 1px 75px;
+            border-radius: 5px;
+        }
+        .search img{
+           display: inline-block;
+           padding-left: 0px;
+           border-radius: 5;
+        }
+        #note{
+            margin-right: 20px;
+            margin-left: 20px;
+            font-size: 25px;
+            background-color: rgb(230, 11, 157);
+            color: seashell;
+        }
+        .logo{
+            display: inline-block;
+            padding-top: 0px;
+            padding-left: 2px;
+        }
+        .logo img{
+            align-items: center;
+            width: 35px;
+            border-radius: 100px;   
+        }
+        #search{
+            border-radius: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        </div>
+        <ul>
+            <li>
+                        <div class="logo">
+                            <img src="gift.jpg" alt="">
+                            <!-- <div class="left">
+                                Manish store
+                            </div> -->
+
+
+                </li>
+                <li><a href="front.html">Home</a></li>
+                <li><a href="about.htm">About</a></li>
+                <li><a href="help.htm">Help</a></li>
+                <li><a href="contact.htm">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search">
+                <img src="search.png" alt="" class="search" width="20px">
+                </div>
+            </ul>
+        </nav>
+    </header>
+ 
+    <div class="details">
+    <form>
+        Name : <input type="text" name="name" placeholder="name">
+        Address of Delivery : <input type="text" name="address" placeholder=" Delivery address">
+        Contact no.: <input type="number" placeholder="contact no.">
+        <a id="submit">
+        <input type="submit" name="submit">
+        <input type="reset" name="reset"></a>
+    </form>
+</div>
+<p id="note">Note:- If u are unable to find the item in the list then u can easily search it in 
+    the search bar on the upper right corner....Thank you!
+</p>
+<div id="table">
+    <table>
+        <thead>
+             <tr id="head">
+                 <th>S.no</th>
+                 <th>Product Name</th>
+                 <th>Price</th>
+                 <th>Order</th>
+             </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Aata</td>
+                <td>25 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+                
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Maida</td>
+                <td>24 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Rava</td>
+                <td>24 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Laal mirch</td>
+                <td>100 Per kg</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Haldi</td>
+                <td>200 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Dhania</td>
+                <td>80 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Arhar Daal</td>
+                <td>250 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>Moong daal</td>
+                <td>180 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>Urd daal</td>
+                <td>180 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>Masoor daal</td>
+                <td>150 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td>Kaju</td>
+                <td>800 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>12.</td>
+                <td>Badaam</td>
+                <td>400 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>13.</td>
+                <td>Kismis</td>
+                <td>200 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>14.</td>
+                <td>Chiraunji</td>
+                <td>150 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>15.</td>
+                <td>Makhane</td>
+                <td>300 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>16.</td>
+                <td>Gari</td>
+                <td>200 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>17.</td>
+                <td>Namak</td>
+                <td>11 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>18.</td>
+                <td>Chole</td>
+                <td>80 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>19.</td>
+                <td>Chane</td>
+                <td>70 Per Kg.</td>
+                <td><button id="order">Add +</button></td>
+            </tr>
+            <tr>
+                <td>20.</td>
+                <td>Colgate</td>
+                <td>55 per pack</td>
+                <td><button id="order">Add +s</button></td>
+            </tr> 
+        </tbody>
+    </table>
+  </div>
+</body>
+</html>

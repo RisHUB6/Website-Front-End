@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  
+
+    #wel {
+        text-align: center;
+
+        color: chartreuse;
+        /* padding-left: 550px; */
+        font-size: 55px;
+        font-style: italic;
+        font-family: cursive;
+        outline-color: chartreuse;
+        outline-width: 100px;
+    }
+
+    #man {
+        color: rgb(18, 19, 16);
+        text-align: center;
+        font-size: 40px;
+        font-style: italic;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    body {
+
+        background-image: url(b3.png);
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: aqua;
+    }
+
+    .navbar img {
+        filter: invert(100);
+    }
+
+    .navbar {
+        /* display: flex; */
+        /* position: fixed; */
+        margin-left: 2px;
+        border-radius: 40px;
+        /* flex-wrap: wrap; */
+        padding: 3px 5px;
+        padding-bottom: 1px;
+        background-color: darkgray;
+        /* margin-bottom: 60px; */
+    }
+
+    .navbar li {
+        /* padding-top: 20px; */
+        /* position: fixe; */
+        float: left;
+
+        list-style: none;
+
+    }
+
+    .navbar ul {
+        overflow: auto;
+
+    }
+
+    .navbar li a {
+
+        font-size: 20px;
+        padding-left: 10px;
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(9, 236, 187);
+        padding-bottom: 2px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: crimson;
+    }
+
+    .search {
+        float: right;
+        color: cornsilk;
+        padding: 1px 75px;
+        border-radius: 5px;
+    }
+
+    #note {
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 25px;
+        background-color: rgb(230, 11, 157);
+        color: seashell;
+    }
+
+    .logo {
+        display: inline-block;
+        padding-top: 0px;
+        padding-left: 2px;
+    }
+
+    .logo img {
+        align-items: center;
+        width: 35px;
+        border-radius: 100px;
+    }
+
+    .search {
+        float: right;
+        color: cornsilk;
+        padding: 1px 75px;
+        border-radius: 5px;
+    }
+
+    #msg {
+          display: flex;
+          flex-wrap: wrap;
+        color: rgb(134, 216, 86);
+        font-size: 22px;
+        background-color: rgb(106, 135, 189);
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    #store {
+
+        padding-left: 600px;
+        text-decoration: none;
+        color: rgb(241, 9, 9);
+        font-size: 25px;
+
+    }
+
+    #st {
+        padding-left: 570px;
+    }
+
+    #st:hover {
+        color: blue;
+        text-decoration: underline;
+    }
+
+    #store img {
+        border-radius: 400px;
+        filter: invert(100%);
+    }
+
+
+
+    #clients {
+        padding: 20px;
+        display: flex;
+        background-color: darkgrey;
+    }
+
+    .avail {
+        /* background-image: url(cloths.jpg); */
+        justify-content: center;
+        border-radius: 20px;
+        background-color: rgb(226, 59, 59);
+        display: flex;
+        flex-wrap: wrap;
+        border-width: 10px;
+        border: 10px black;
+    }
+
+    .av {
+        font-size: 17px;
+
+        background-color: rgb(47, 219, 211);
+        text-align: center;
+
+        border: 10px red;
+        border-width: 10px;
+        border-radius: 30px;
+        padding: 20px;
+        margin: 50px;
+
+
+    }
+
+    .av img {
+
+
+        align-items: center;
+
+    }
+    
+
+    #clients {
+      
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .h-primary {
+        text-align: center;
+    }
+    .log{
+        float: right;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <div class="logo">
+                        <img src="gift.jpg" alt="">
+                        <!-- <div class="left">
+                            Manish store
+                        </div> -->
+
+
+                </li>
+                <li><a href="front.html">Home</a></li>
+                <li><a href="about.htm">About</a></li>
+                <li><a href="help.htm">Help</a></li>
+                <li><a href="contact.htm">Contact us</a></li>
+                <div class="log"><li><a href="login.html">login</a></li>
+                <li><a href="register.html">Register</a></li>
+</div>
+            </ul>
+        </nav>
+    </header>
+
+
+    <h1 id="wel">WELCOME !</h1>
+    <h2 id="man"><u>XYZ GENERAL STORE..</u></h2>
+    <p id="msg">Hello.... welcome to the official site of manish general store.... From here u can order any type of
+        house
+        hold goods in just minutes only by sitting in your houses. This step is taken in order to maintain social
+        distancing and avoiding the spread of dangerous corona virus......Thaank you...
+    </p>
+    <a href="store.html" id="store"><img src="gift.jpg"><br>
+        <h5 id="st">CLICK HERE TO GO TO STORE</h5>
+    </a>
+    <section class="avail">
+        <div class="av" id="household-goods"><img src="house.jpg" width="300px" alt=""><br><br>HOUSEHOLD GOODS SECTION
+        </div>
+        <div class="av" id="clothing"><img src="cloths.jpg" width="300px " alt=""><br><br>APPARELS SECTION</div>
+        <div class="av" id="electronics"><img src="elec.jpg" width="300px" alt=""><br><br>ELECTRONIC GADGETS SECTION
+        </div>
+    </section>
+    <section id="client-sector">
+        <h1 class="h-primary">
+            Our clients
+        </h1>
+        <div id="clients">
+            </p>
+            <div class="client-item">
+                <img src="twitter.png" width="100px" alt="">
+                <img src="whats.jpg" width="100px" alt="">
+                <img src="insta.jpg" width="100px" alt="">
+                <img src="fb.png" width="100px" alt="">
+                <img src="skype.png" width="100px" alt="">
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
+
